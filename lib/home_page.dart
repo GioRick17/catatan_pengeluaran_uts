@@ -460,7 +460,7 @@ class _HomePageState extends State<HomePage> {
               controller: _namaController,
               textInputAction: TextInputAction.next,
               decoration: InputDecoration(
-                labelText: 'Nama Keperluan',
+                labelText: 'Pengeluaran',
                 hintText: 'Contoh: Makan Siang / Bensin',
                 prefixIcon: const Icon(Icons.edit_note_rounded),
                 border: OutlineInputBorder(
@@ -469,7 +469,7 @@ class _HomePageState extends State<HomePage> {
               ),
               validator: (value) {
                 if (value == null || value.trim().isEmpty) {
-                  return 'Nama keperluan tidak boleh kosong';
+                  return 'Pengeluaran tidak boleh kosong';
                 }
                 return null;
               },
